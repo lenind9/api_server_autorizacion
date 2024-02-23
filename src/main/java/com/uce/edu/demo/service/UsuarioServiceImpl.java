@@ -5,12 +5,14 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.uce.edu.demo.repository.IUsuarioRepository;
 import com.uce.edu.demo.repository.modelo.Usuario;
 
 import static java.util.Collections.emptyList;
 
+@Service
 public class UsuarioServiceImpl implements UserDetailsService {
 	
 	@Autowired
