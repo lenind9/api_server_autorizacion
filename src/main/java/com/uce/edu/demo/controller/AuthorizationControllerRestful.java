@@ -31,7 +31,7 @@ public class AuthorizationControllerRestful {
 		
 		// si la autenticacion es correcta, puedo retornar un token
 		this.autenticacion(usuario.getNombre(), usuario.getPassword());
-		return new JwtUtils().buildTokenJWT(usuario.getNombre());
+		return this.jwt.buildTokenJWT(usuario.getNombre());
 	}
 
 	private void autenticacion(String usuario, String password) {

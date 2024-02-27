@@ -21,7 +21,7 @@ public class JwtUtils {
 		return Jwts.builder().setSubject(nombre).setIssuedAt(new Date())
 				.setExpiration(new Date(System.currentTimeMillis() + this.jwtExpirationMs))
 				.signWith(SignatureAlgorithm.HS512,
-						"ASaskdjhakdhkahdksadhasdasd6a5ds45sad5ad45as4da4d231as5d46sa54d6as5d4a65d4a65sd4a65d46a5d456ad46ad4a65d456")
+						"ASaskdjhakdhkahdksadhasdasd6a5ds45sad5ad45as4da4d231as5d46sasddasaa54d6as5d4a65d4a65sd4a65d46a5d456ad46ad4a65d456")
 				.compact();
 	}
 }
